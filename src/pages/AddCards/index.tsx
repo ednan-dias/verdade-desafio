@@ -1,13 +1,13 @@
 import { Text } from "../../components/Text";
 import { Wrapper } from "../../components/Wrapper";
-import { Choice, Container, Content, Header } from "./styles";
+import { Choice, Container, Content } from "./styles";
 import { Icon } from "../../components/Icon";
 import { useState } from "react";
 import { Input } from "../../components/Input";
 import { CenterContent } from "../../components/CenterContent";
 import { Button } from "../../components/Button";
 
-export function Config() {
+export function AddCards() {
   const [selectedType, setSelectedType] = useState("truth");
   const [data, setData] = useState("");
 

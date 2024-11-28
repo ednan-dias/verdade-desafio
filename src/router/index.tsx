@@ -2,7 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Home } from "../pages/Home";
 
 import { RootStackParamList } from "../@types/@react-navigation/native";
-import { Config } from "../pages/Config";
+import { AddCards } from "../pages/AddCards";
 
 const { Navigator, Screen } = createNativeStackNavigator<RootStackParamList>();
 
@@ -15,7 +15,7 @@ export function Router() {
       }}
     >
       <Screen name="Home" component={Home} />
-      <Screen name="Config" component={Config} />
+      <Screen name="AddCards" component={AddCards} />
     </Navigator>
   );
 }

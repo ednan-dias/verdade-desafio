@@ -21,7 +21,7 @@ export function Home() {
             weight="fill"
             color={theme.colors.primary}
             isButton
-            onPress={() => navigate("Config")}
+            onPress={() => navigate("AddCards")}
           />
         </Header>
 
