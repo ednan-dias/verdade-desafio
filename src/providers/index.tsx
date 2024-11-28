@@ -3,6 +3,7 @@ import { Router } from "../router";
 import { ThemeProvider } from "styled-components";
 import theme from "../styles/theme";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import Toast from "react-native-toast-message";
 
 export function AppProvider() {
   return (
@@ -15,6 +16,7 @@ export function AppProvider() {
           }}
         >
           <Router />
+          <Toast />
         </GestureHandlerRootView>
       </NavigationContainer>
     </ThemeProvider>
