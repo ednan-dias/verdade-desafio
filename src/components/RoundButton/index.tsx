@@ -30,7 +30,7 @@ export const RoundButton = forwardRef<typeof RectButton, ButtonProps>(
         {...rest}
       >
         {isLoading ? (
-          <ActivityIndicator size={30} color="#fff" />
+          <ActivityIndicator size={25} color="#fff" />
         ) : (
           <Icon iconName={icon} color="#fff" weight="fill" />
         )}

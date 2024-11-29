@@ -15,10 +15,20 @@ export const Content = styled.View`
 
 export const Header = styled.View``;
 
-export const Players = styled.ScrollView`
+export const Center = styled.View`
+  min-width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Players = styled.View`
   flex: 1;
   min-width: 100%;
   padding: 10px;
+
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 `;
 
@@ -43,4 +53,8 @@ export const PlayerInfo = styled.View`
   gap: 10px;
 `;
 
-export const Footer = styled.View``;
+export const Footer = styled.View`
+  min-width: 100%;
+  align-items: center;
+  gap: 10px;
+`;

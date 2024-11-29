@@ -38,7 +38,7 @@ export function AddCard() {
     <Wrapper>
       <Container>
         <Text size={20} weight="300">
-          Adicionar Cartas
+          Adicionar Cards
         </Text>
 
         <Content>

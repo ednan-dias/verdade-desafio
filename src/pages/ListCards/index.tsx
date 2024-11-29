@@ -2,8 +2,9 @@ import { Text } from "../../components/Text";
 import { Wrapper } from "../../components/Wrapper";
 import { Cards, CardView, CardViewContent, Container, Content } from "./styles";
 
-import { useCallback, useEffect, useState } from "react";
-import { Card, StateIndex } from "../../interfaces/card";
+import { useCallback, useState } from "react";
+import { Card } from "../../interfaces/card";
+import { StateIndex } from "../../interfaces/global";
 import CardService from "../../services/CardService";
 import { customAPIMessageError } from "../../utils/errorUtils";
 import { Loader } from "../../components/Loader";
@@ -70,7 +71,7 @@ export function ListCards() {
     <Wrapper>
       <Container>
         <Text size={20} weight="300">
-          Visualizar Cartas
+          Visualizar Cards
         </Text>
 
         <Content>
@@ -84,7 +85,7 @@ export function ListCards() {
 
               <Button
                 icon="PlusCircle"
-                text="Adicionar Cartas"
+                text="Adicionar Cards"
                 onPress={() => navigate("AddCard")}
               />
             </>
@@ -111,7 +112,7 @@ export function ListCards() {
                   ) : (
                     <TouchButton
                       icon="Trash"
-                      iconColor="#E71D36"
+                      iconColor="#e74c3c"
                       iconSize={30}
                       onPress={() =>
                         Ask("Deseja excluir o card selecionado?", () =>

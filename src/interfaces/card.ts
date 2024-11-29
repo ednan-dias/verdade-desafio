@@ -10,7 +10,3 @@ export interface Card {
   type: Type;
   message: string;
 }
-
-export interface StateIndex {
-  [index: number]: boolean;
-}

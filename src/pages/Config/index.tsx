@@ -17,13 +17,13 @@ export function Config() {
         <Content>
           <Button
             icon="Eye"
-            text="Visualizar Cartas"
+            text="Visualizar Cards"
             onPress={() => navigate("ListCards")}
           />
 
           <Button
             icon="PlusCircle"
-            text="Adic. Cartas"
+            text="Adic. Cards"
             onPress={() => navigate("AddCard")}
           />
         </Content>

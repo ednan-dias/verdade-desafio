@@ -6,6 +6,7 @@ import { AddCard } from "../pages/AddCard";
 import { Config } from "../pages/Config";
 import { ListCards } from "../pages/ListCards";
 import { AddPlayers } from "../pages/AddPlayers";
+import { PlayGame } from "../pages/PlayGame";
 
 const { Navigator, Screen } = createNativeStackNavigator<RootStackParamList>();
 
@@ -22,6 +23,7 @@ export function Router() {
       <Screen name="AddCard" component={AddCard} />
       <Screen name="ListCards" component={ListCards} />
       <Screen name="AddPlayers" component={AddPlayers} />
+      <Screen name="PlayGame" component={PlayGame} />
     </Navigator>
   );
 }
