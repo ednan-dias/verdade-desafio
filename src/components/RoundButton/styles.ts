@@ -5,12 +5,13 @@ interface ContainerProps {
   color?: string;
   size?: number;
   enabled?: boolean;
+  borderRadius?: number;
 }
 
 export const Container = styled(RectButton)<ContainerProps>`
-  width: 50px;
-  height: 50px;
-  border-radius: 15px;
+  width: ${({ size }) => `${size || 50}px`};
+  height: ${({ size }) => `${size || 50}px`};
+  border-radius: ${({ borderRadius }) => `${borderRadius || 15}px`};
 
   flex-direction: row;
   align-items: center;

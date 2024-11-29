@@ -2,7 +2,6 @@ import { ActivityIndicator } from "react-native";
 
 import * as PhosphorIcon from "phosphor-react-native";
 
-import { Text } from "../Text";
 import { Icon } from "../Icon";
 
 import { Container } from "./styles";
@@ -13,6 +12,7 @@ export interface ButtonProps extends RectButtonProps {
   icon: keyof typeof PhosphorIcon;
   color?: string;
   size?: number;
+  borderRadius?: number;
   isDisabled?: boolean;
   isLoading?: boolean;
 }

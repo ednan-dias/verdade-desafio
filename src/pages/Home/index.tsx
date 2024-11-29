@@ -3,7 +3,6 @@ import { Text } from "../../components/Text";
 import { Wrapper } from "../../components/Wrapper";
 import { Container, Content, Header } from "./styles";
 import WelcomeImage from "../../assets/welcome.svg";
-import { Icon } from "../../components/Icon";
 import { useTheme } from "styled-components/native";
 import { useNavigation } from "@react-navigation/native";
 import { TouchButton } from "../../components/TouchButton";
@@ -35,7 +34,7 @@ export function Home() {
           <Button
             icon="Joystick"
             text="Jogar"
-            onPress={() => navigate("PlayGame")}
+            onPress={() => navigate("AddPlayers")}
           />
         </Content>
       </Container>

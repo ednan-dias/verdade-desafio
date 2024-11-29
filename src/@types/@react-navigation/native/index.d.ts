@@ -5,6 +5,7 @@ export type RootStackParamList = {
   Config: undefined;
   AddCard: undefined;
   ListCards: undefined;
+  AddPlayers: undefined;
   PlayGame: undefined;
 };
 
